@@ -1,0 +1,243 @@
+html {
+    overflow-y: scroll;
+}
+
+#banner {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #D8D8D8;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+
+body {
+    font-family: "courier";
+    /*background-color: #1C1C1C;*/
+    
+    background-color: #19191F;
+    color: #D8D8D8;
+}
+
+#wrapper {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+s #boxeroni {
+    width: 300px;
+}
+
+.panel {
+    overflow: hidden;
+    height 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.left {
+    float: left;
+    width: 300px;
+    border-right: 2px solid;
+    border-radius 25px;
+    margin-bottom: 4px;
+    left 0;
+}
+
+.right {
+    left: auto;
+    right: auto;
+}
+
+.video iframe {
+    height: 510px;
+    max-width: 854px;
+    width: 100%;
+}
+
+.content {
+    height: auto;
+}
+
+.content h {
+    font-size: 1.1em;
+}
+
+.content a {
+    text-decoration: none;
+    color: #2E9AFE;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.content a:hover {
+    opacity: 0.4;
+}
+
+.content h1 {
+    color: #D8D8D8;
+}
+
+.lmao {
+    /*CONTENT RIGHT*/
+    
+    margin-left: 20px;
+    font-size: 1.4em;
+}
+
+.ayy {
+    /*CONTENT LEFT*/
+    
+    margin-bottom: 45px;
+}
+
+.embimg {
+    float: right;
+    margin: 10px;
+}
+
+.embimg img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #D8D8D8;
+}
+
+ul.social {
+    list-style-type: none;
+    display: inline;
+}
+
+ul.social li a {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #D8D8D8;
+    border-radius: 50%;
+    float: left;
+    height: 5em;
+    width: 5em;
+    background-size: 100% 100%;
+    text-indent: -90000px;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* For IE8 and earlier */
+    
+    transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -webkit-transition: opacity .5s ease;
+    margin-right: 5px;
+}
+
+ul.social li a:hover {
+    opacity: 0.4;
+}
+
+ul.social a#twitter {
+    background-image: url(imgs/twitter.png);
+}
+
+ul.social a#skype {
+    background-image: url(imgs/skype.png);
+}
+
+ul.social a#mail {
+    background-image: url(imgs/email-icon.png);
+}
+
+.scrolltotop {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    background: url(imgs/up.png);
+    opacity: 0.5;
+    display: none;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #D8D8D8;
+}
+
+.scrolltotop:hover {
+    opacity: 0.4;
+    filter: alpha(opacity=100);
+    /* For IE8 and earlier */
+    
+    transition: opacity .5s ease;
+    -moz-transition: opacity .5s ease;
+    -webkit-transition: opacity .5s ease;
+}
+
+
+@media (min-width:1100px){
+    .left{
+        position: fixed;
+    }
+    .right{
+        margin-left: 300px;
+    }
+    
+}
+
+@media (max-width: 1100px) {
+    #wrapper {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #banner {
+        height: 200px;
+        width: 200px;
+    }
+    .content {
+        text-align: center;
+        float: center;
+    }
+    #unityPlayer {
+        float: center;
+        margin: auto;
+    }
+    .right {
+        width: auto;
+    }
+    .left {
+        width: auto;
+        border-right: none;
+        border-bottom: 2px solid;
+        margin-bottom: 4px;
+    }
+    .lmao {
+        /*CONTENT RIGHT*/
+        
+        margin-left: 0px;
+    }
+
+    ul.social {
+        text-align: center;
+        align-items: center;
+        display: inline-block;
+        margin-top: 25px
+    }
+    ul.social li a {
+        margin-left: -20%;
+        margin-bottom: 10px;
+    }
+    .panel {
+        width: 100%;
+    }
+    .scrollToTop {
+        background: url(imgs/up_80x80.png);
+        height: 80px;
+        width: 80px;
+        top: 30px;
+        right: 30px;
+    }
+    .embimg {
+        float: center;
+    }
